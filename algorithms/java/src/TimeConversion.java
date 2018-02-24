@@ -1,4 +1,8 @@
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
 public class TimeConversion {
     private static String timeConversion(String s) {
         // Complete this function
@@ -23,9 +27,14 @@ public class TimeConversion {
     }
 
     public static void main(String[] args) {
+       // final long startTime = System.currentTimeMillis();
         Scanner in = new Scanner(System.in);
         String s = in.next();
+       // String s = "12:23:45AM"; //takes 93 milli sec
         String result = timeConversion(s);
         System.out.println(result);
+//        final long duration = System.currentTimeMillis() - startTime;
+//        System.out.println(duration);
+
     }
 }
